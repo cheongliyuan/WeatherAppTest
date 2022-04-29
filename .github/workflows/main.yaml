@@ -10,6 +10,7 @@ jobs:
       run: echo "The current time and date is $(date)"
     - name: echo the current branch
       run: echo ${{ github.ref_name }}
+      # $ {{}} github action. compiler reads this syntax and replaces it to github branch name. this is a github action 
 
 
 
