@@ -39,7 +39,6 @@ jobs:
 
     #https://github.com/marketplace/actions/deploy-to-heroku
     - name: Deploy to Heroku 
-      uses: actions/checkout@v2
       uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
       with:
         heroku_api_key: ${{secrets.HEROKU_KEY}}
